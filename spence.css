@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding:2rem 1.2rem;
+    background-color: #efeeea;
+}
+
+.menu-btn i{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.banner{
+    width: 100%;
+    padding-bottom: 1.4rem;
+    background-color: #efeeea;
+}
+
+.banner .banner-body{
+    margin: 0 1.2rem;
+}
+
+.banner-image img{
+    width: 100%;
+}
+
+.banner-content{
+    margin: 2rem 0;
+}
+
+.banner-content h1{
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #2d2d2d;
+}
+
+.banner-content p{
+    font-size: 1.3rem;
+    margin: 1.1rem 0;
+    letter-spacing: 1px;
+    color: #737060;
+}
+
+.banner-content .banner-points{
+    list-style: none;
+}
+
+.banner-points li{
+    display: flex;
+    margin-bottom: .6rem;
+    align-items: center;
+}
+
+.banner-points li span{
+    margin-left: .8rem;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #5a5745;
+}
+
+.email-form{
+    width: 100%;
+}
+
+.email-form input{
+    width: 55%;
+    margin-right: 1rem;
+    padding: 1.3rem .6rem;
+    outline: transparent;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.email-form input::placeholder{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(184, 187, 189);
+}
+
+
+.email-form button{
+    width: 28%;
+    padding: 1.2rem .6rem;
+    border:transparent;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.brands{
+    padding: 1.2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands-img{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands img{
+    width: 31%;
+    height: 100%;
+    margin-right: .6rem;
+}
+
+.brands img:nth-child(3){
+    margin-right: 0;
+}
+
+.escrow{
+    width: 100%;
+    margin: 1rem 0;
+    padding:0 1.4rem;
+}
+
+.text-editor{
+    margin: 3.5rem 1.4rem;
+}
+
+.escrow .escrow-body{
+    background-color: #efeeea;
+    border-radius: 8px;
+    padding:1.8rem 1.8rem 0 1.8rem;
+}
+
+.escrow-body .escrow-content h1, .text-editor-content h1{
+    font: bolder;
+    font-size: 2.1rem;
+    margin-bottom: 1.2rem;
+}
+
+.escrow-content p, .text-editor-content p{
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.escrow-content .link, .text-editor-content .editor-link{
+    margin: 1.5rem 0;
+}
+
+
+.link a, .editor-link a{
+    font-size: 1.2rem;
+    color: #6e6d67;
+}
+
+.escrow-img, .editor-img{
+    width: 100%;
+}
+.escrow-img img, .editor-img img{
+        width: 100%;
+}
+
+.footer
+{
+    padding: 1rem 1.4rem;
+    background-color: black;
+}
+
+.footer-content .footer-top h2{
+    color: white;
+    margin: .5rem 0;
+}
+
+.footer-content .footer-top p{
+    color:#999999;
+    letter-spacing: 1px;
+}
+
