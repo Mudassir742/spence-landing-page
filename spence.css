@@ -1,189 +1,287 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
-*{
-    padding:0;
+* {
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 100%;
-    padding:2rem 1.2rem;
+    width: 100vw;
+    padding: 1.7rem 1rem;
     background-color: #efeeea;
 }
 
-.menu-btn i{
+.menu-btn i {
     font-size: 1.8rem;
-    cursor: pointer;
 }
 
-.banner{
+.banner {
     width: 100%;
+    height: auto;
     padding-bottom: 1.4rem;
     background-color: #efeeea;
 }
 
-.banner .banner-body{
-    margin: 0 1.2rem;
+.banner .banner-body {
+    margin:0 1rem;
 }
 
-.banner-image img{
+.banner-image img {
     width: 100%;
+    height: 50%;
 }
 
-.banner-content{
+.banner-content {
     margin: 2rem 0;
 }
 
-.banner-content h1{
-    font-size: 2.2rem;
-    letter-spacing: 1px;
+.banner-content h1 {
+    font-size: 1.5rem;
     word-spacing: 1px;
     color: #2d2d2d;
 }
 
-.banner-content p{
-    font-size: 1.3rem;
+.banner-content p {
+    font-size: 1.062rem;
     margin: 1.1rem 0;
-    letter-spacing: 1px;
+    text-align: justify;
     color: #737060;
 }
 
-.banner-content .banner-points{
+.banner-content .banner-points {
     list-style: none;
 }
 
-.banner-points li{
+.banner-points li {
     display: flex;
-    margin-bottom: .6rem;
     align-items: center;
+    margin-bottom: .6rem;
 }
 
-.banner-points li span{
+.banner-points li span {
     margin-left: .8rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     color: #5a5745;
 }
-
-.email-form{
-    width: 100%;
-}
-
-.email-form input{
+.email-form input {
     width: 55%;
-    margin-right: 1rem;
-    padding: 1.3rem .6rem;
+    margin-right: .8rem;
+    padding: 1rem .3rem;
     outline: transparent;
     border: 1px solid grey;
     border-radius: 5px;
 }
 
-.email-form input::placeholder{
-    font-size: 1.1rem;
+.email-form input::placeholder {
+    font-size: 1rem;
     font-weight: bold;
     color: rgb(184, 187, 189);
 }
 
-
-.email-form button{
-    width: 28%;
-    padding: 1.2rem .6rem;
-    border:transparent;
+.email-form button {
+    border: transparent;
     border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    padding:1rem .3rem;
     background-color: black;
     color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
 }
 
-.brands{
-    padding: 1.2rem;
+.brands, .brands-img{
+    padding: 1rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.brands-img{
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+.brands-img {
+   padding: 0;
 }
 
-.brands img{
+.brands img {
     width: 31%;
     height: 100%;
     margin-right: .6rem;
 }
 
-.brands img:nth-child(3){
+.brands img:nth-child(3) {
     margin-right: 0;
 }
 
-.escrow{
+.escrow {
     width: 100%;
     margin: 1rem 0;
-    padding:0 1.4rem;
+    padding: 0 1rem;
 }
 
-.text-editor{
-    margin: 3.5rem 1.4rem;
+.text-editor {
+    margin: 3.5rem 1rem;
 }
 
-.escrow .escrow-body{
+.escrow .escrow-body {
     background-color: #efeeea;
     border-radius: 8px;
-    padding:1.8rem 1.8rem 0 1.8rem;
+    padding: 1.4rem 1.4rem 0 1.4rem;
 }
 
-.escrow-body .escrow-content h1, .text-editor-content h1{
-    font: bolder;
-    font-size: 2.1rem;
+.escrow-body .escrow-content h1, .text-editor-content h1 {
+    font-size: 1.5rem;
     margin-bottom: 1.2rem;
 }
 
-.escrow-content p, .text-editor-content p{
-    letter-spacing: 1px;
-    font-size: 1.1rem;
+.escrow-content p, .text-editor-content p {
+    text-align:justify;
+    font-size: 1.062rem;
 }
 
-.escrow-content .link, .text-editor-content .editor-link{
+.escrow-content .link, .text-editor-content .editor-link {
     margin: 1.5rem 0;
 }
 
-
-.link a, .editor-link a{
-    font-size: 1.2rem;
+.link a, .editor-link a {
+    font-size: 1rem;
     color: #6e6d67;
 }
 
-.escrow-img, .editor-img{
+.escrow-img img, .editor-img img {
     width: 100%;
 }
-.escrow-img img, .editor-img img{
-        width: 100%;
-}
 
-.footer
-{
-    padding: 1rem 1.4rem;
+.footer {
+    padding: 1rem;
     background-color: black;
 }
 
-.footer-content .footer-top h2{
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "footer-top footer-top footer-top" "link-1 . link-2" "link-3 . link-4";
+    column-gap: 10px;
+    row-gap: 20px;
+}
+
+.footer-top {
+    grid-area: footer-top;
+}
+
+.footer-link.one{
+    grid-area: link-1;
+}
+
+.footer-link.two{
+    grid-area: link-2;
+}
+
+.footer-link.three {
+    grid-area: link-3;
+}
+
+.footer-link.four {
+    grid-area: link-4;
+}
+
+.footer-link ul{
+    list-style: none;
+}
+
+.footer-link ul li a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: .8rem;
+    color: #999999;
+}
+
+.footer-content .footer-top h2 {
     color: white;
     margin: .5rem 0;
 }
 
-.footer-content .footer-top p{
-    color:#999999;
+.footer-content h3 {
+    color: white;
     letter-spacing: 1px;
 }
 
+.footer-content .footer-top p {
+    color: #999999;
+    font-size: 1.062rem;
+    letter-spacing: normal;
+    text-align: justify;
+}
+
+@media only screen and (min-width:480px){
+    .header{
+        padding: 1.7rem 1.2rem;
+    }
+
+    .banner .banner-body {
+        margin:0 1.2rem;
+    }
+
+    .banner-content h1{
+        font-size: 1.6rem;
+    }
+
+    .banner-content p{
+        font-size: 1.1rem;
+    }
+
+    .banner-points li span{
+        font-size: 1.162rem;
+    }
+
+    .email-form input::placeholder{
+        font-size: 1.1rem;
+    }
+    .email-form button{
+        font-size: 16px;
+    }
+
+    .brands{
+        padding: 1.2rem;
+    }
+
+    .escrow{
+        padding: 0 1.2rem;
+    }
+
+    .text-editor {
+        margin: 3.5rem 1.2rem;
+    }
+
+    .escrow-body .escrow-content h1, .text-editor-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .escrow-content p, .text-editor-content p {
+        text-align:justify;
+        font-size: 1.1rem;
+    }
+
+    .link a, .editor-link a {
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .footer{
+        padding: 1.2rem;
+    }
+
+    .footer-content .footer-top p{
+        font-size: 1.162rem;
+    }
+
+    .footer-link ul li a{
+        font-size: 1.1rem;
+    }
+}
