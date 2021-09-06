@@ -28,7 +28,7 @@
 }
 
 .banner .banner-body {
-    margin:0 1rem;
+    margin: 0 1rem;
 }
 
 .banner-image img {
@@ -69,6 +69,7 @@
     letter-spacing: 1px;
     color: #5a5745;
 }
+
 .email-form input {
     width: 55%;
     margin-right: .8rem;
@@ -89,12 +90,12 @@
     border-radius: 5px;
     font-size: 14px;
     font-weight: bold;
-    padding:1rem .3rem;
+    padding: 1rem .3rem;
     background-color: black;
     color: white;
 }
 
-.brands, .brands-img{
+.brands, .brands-img {
     padding: 1rem;
     width: 100%;
     display: flex;
@@ -103,7 +104,7 @@
 }
 
 .brands-img {
-   padding: 0;
+    padding: 0;
 }
 
 .brands img {
@@ -138,7 +139,7 @@
 }
 
 .escrow-content p, .text-editor-content p {
-    text-align:justify;
+    text-align: justify;
     font-size: 1.062rem;
 }
 
@@ -163,7 +164,7 @@
 .footer-content {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "footer-top footer-top footer-top" "link-1 . link-2" "link-3 . link-4";
     column-gap: 10px;
@@ -174,11 +175,11 @@
     grid-area: footer-top;
 }
 
-.footer-link.one{
+.footer-link.one {
     grid-area: link-1;
 }
 
-.footer-link.two{
+.footer-link.two {
     grid-area: link-2;
 }
 
@@ -190,11 +191,11 @@
     grid-area: link-4;
 }
 
-.footer-link ul{
+.footer-link ul {
     list-style: none;
 }
 
-.footer-link ul li a{
+.footer-link ul li a {
     text-decoration: none;
     display: inline-block;
     margin-top: .8rem;
@@ -218,70 +219,209 @@
     text-align: justify;
 }
 
-@media only screen and (min-width:480px){
-    .header{
+@media only screen and (min-width:480px) {
+    .header {
         padding: 1.7rem 1.2rem;
     }
-
     .banner .banner-body {
-        margin:0 1.2rem;
+        margin: 0 1.2rem;
     }
-
-    .banner-content h1{
+    .banner-content h1 {
         font-size: 1.6rem;
     }
-
-    .banner-content p{
+    .banner-content p {
         font-size: 1.1rem;
     }
-
-    .banner-points li span{
+    .banner-points li span {
         font-size: 1.162rem;
     }
-
-    .email-form input::placeholder{
+    .email-form input::placeholder {
         font-size: 1.1rem;
     }
-    .email-form button{
+    .email-form button {
         font-size: 16px;
     }
-
-    .brands{
+    .brands {
         padding: 1.2rem;
     }
-
-    .escrow{
+    .escrow {
         padding: 0 1.2rem;
     }
-
     .text-editor {
         margin: 3.5rem 1.2rem;
     }
-
     .escrow-body .escrow-content h1, .text-editor-content h1 {
         font-size: 1.6rem;
     }
-
     .escrow-content p, .text-editor-content p {
-        text-align:justify;
+        text-align: justify;
         font-size: 1.1rem;
     }
-
     .link a, .editor-link a {
         font-size: 1.2rem;
         font-weight: bold;
         letter-spacing: 1px;
     }
-
-    .footer{
+    .footer {
         padding: 1.2rem;
     }
-
-    .footer-content .footer-top p{
+    .footer-content .footer-top p {
         font-size: 1.162rem;
     }
-
-    .footer-link ul li a{
+    .footer-link ul li a {
         font-size: 1.1rem;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .header {
+        padding: 1.7rem 1.4rem;
+    }
+    .banner .banner-body {
+        margin: 0 1.4rem;
+    }
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+    .banner-content p {
+        font-size: 1.2rem;
+    }
+    .banner-points li span {
+        font-size: 1.262rem;
+    }
+    .email-form input::placeholder {
+        font-size: 1.1rem;
+    }
+    .email-form button {
+        font-size: 16px;
+    }
+    .brands {
+        padding: 1.4rem;
+    }
+    .escrow {
+        padding: 0 1.4rem;
+    }
+    .escrow .escrow-body {
+        padding: 2rem 2rem 0 2rem;
+    }
+    .text-editor {
+        margin: 3.5rem 1.4rem;
+    }
+    .escrow-body .escrow-content h1, .text-editor-content h1 {
+        font-size: 1.8rem;
+    }
+    .escrow-content p, .text-editor-content p {
+        text-align: justify;
+        font-size: 1.2rem;
+    }
+    .link a, .editor-link a {
+        font-size: 1.4rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    .footer {
+        padding: 1.4rem;
+    }
+    .footer-content .footer-top p {
+        font-size: 1.262rem;
+    }
+    .footer-link ul li a {
+        font-size: 1.2rem;
+    }
+    .footer-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "footer-top footer-top link-1 link-2" "link-3 link-4 . .";
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+    .one, .two {
+        margin: .5rem 0;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .header {
+        padding: 1.8rem 1.5rem;
+    }
+    .logo h2 {
+        font-size: 1.8rem;
+    }
+    .menu-btn i {
+        font-size: 2rem;
+    }
+    .banner .banner-body {
+        margin: 0 1.5rem;
+    }
+    .banner-content h1 {
+        font-size: 2.1rem;
+    }
+    .banner-content p {
+        font-size: 1.4rem;
+    }
+    .banner-points li span {
+        font-size: 1.5rem;
+    }
+    .email-form input {
+        padding: 1.162rem .3rem;
+    }
+    .email-form input::placeholder {
+        font-size: 1.162rem;
+    }
+    .email-form button {
+        font-size: 18px;
+    }
+    .brands {
+        padding: 1.5rem;
+    }
+    .escrow {
+        padding: 0 1.5rem;
+    }
+    .escrow .escrow-body {
+        padding: 2.1rem 2.1rem 0 2.1rem;
+    }
+    .text-editor {
+        margin: 3.5rem 1.5rem;
+    }
+    .escrow-body .escrow-content h1, .text-editor-content h1 {
+        font-size: 2rem;
+    }
+    .escrow-content p, .text-editor-content p {
+        text-align: justify;
+        font-size: 1.4rem;
+    }
+    .link a, .editor-link a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    .footer {
+        padding: 1.5rem;
+    }
+    .footer-content .footer-top p {
+        font-size: 1.4rem;
+    }
+    .footer-top h2 {
+        font-size: 1.6rem;
+    }
+    .footer-link h3 {
+        font-size: 1.5rem;
+    }
+    .footer-link ul li a {
+        font-size: 1.4rem;
+    }
+    .footer-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "footer-top footer-top link-1 link-2" "link-3 link-4 . .";
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+    .one, .two {
+        margin: .5rem 0;
     }
 }
