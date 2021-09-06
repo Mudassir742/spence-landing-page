@@ -425,3 +425,127 @@
         margin: .5rem 0;
     }
 }
+
+
+@media only screen and (min-width:810px) {
+    
+    .header {
+        padding: 1.8rem;
+    }
+
+    .banner-body{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .banner-image{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .banner-image img{
+        width: 85%;
+    }
+
+    .banner-content-container{
+        width: 45%;
+    }
+    .banner-content {
+        margin:0;
+    }
+    .banner-content h1{
+        font-size: 1.8rem;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+    }
+
+    .banner-points li span {
+        font-size: 1.062rem;
+    }
+    .email-form{
+        margin-top: 1.2rem;
+    }
+
+    .email-form input {
+        padding: .7rem .3rem;
+    }
+    
+    .email-form input::placeholder {
+        font-size: 1rem;
+    }
+    
+    .email-form button {
+        font-size: 16px;
+        padding: .7rem .3rem;
+    }
+
+    .brands {
+        padding: 1.8rem;
+    }
+    .escrow {
+        padding: 0 1.8rem;
+    }
+    .escrow .escrow-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 2.1rem 2.1rem 0 2.1rem;
+    }
+    .text-editor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin: 3.5rem 1.8rem;
+    }
+
+    .escrow-content,.escrow-img,.text-editor-content,.editor-img{
+        width: 50%;
+    }
+    .escrow-body .escrow-content h1, .text-editor-content h1 {
+        font-size: 1.4rem;
+    }
+    .escrow-content p, .text-editor-content p {
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+    .link a, .editor-link a {
+        font-size: 1.1rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    .footer {
+        padding: 1.8rem;
+    }
+    .footer-content .footer-top p {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+    }
+    .footer-top h2 {
+        font-size: 1.6rem;
+    }
+    .footer-link h3 {
+        font-size: 1.3rem;
+    }
+    .footer-link ul li a {
+        font-size: 1.1rem;
+    }
+    .footer-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "footer-top footer-top link-1 link-2" "link-3 link-4 . .";
+        column-gap: 40px;
+        row-gap: 30px;
+    }
+    .one, .two {
+        margin: .5rem 0;
+    }
+}
