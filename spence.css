@@ -95,7 +95,7 @@
     color: white;
 }
 
-.brands, .brands-img {
+.brands {
     padding: 1rem;
     width: 100%;
     display: flex;
@@ -104,17 +104,24 @@
 }
 
 .brands-img {
-    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .brands img {
     width: 31%;
-    height: 100%;
+    height: 26.4px;
     margin-right: .6rem;
 }
 
 .brands img:nth-child(3) {
     margin-right: 0;
+}
+
+.brands-img img:nth-child(4), .brands-img img:nth-child(5), .brands-img img:nth-child(6), .brands-img img:nth-child(7), .brands-img img:nth-child(8) {
+    display: none;
 }
 
 .escrow {
@@ -329,10 +336,8 @@
         font-size: 1.2rem;
     }
     .footer-content {
-        width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
         grid-template-areas: "footer-top footer-top link-1 link-2" "link-3 link-4 . .";
         column-gap: 40px;
         row-gap: 30px;
@@ -376,6 +381,16 @@
     .brands {
         padding: 1.5rem;
     }
+    .brands-img img:nth-child(4), .brands-img img:nth-child(5) {
+        display: inline-block;
+    }
+    .brands img, .brands img:nth-child(3) {
+        width: 19%;
+        margin-right: .6rem;
+    }
+    .brands img:nth-child(5) {
+        margin-right: 0;
+    }
     .escrow {
         padding: 0 1.5rem;
     }
@@ -413,82 +428,67 @@
         font-size: 1.4rem;
     }
     .footer-content {
-        width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
         grid-template-areas: "footer-top footer-top link-1 link-2" "link-3 link-4 . .";
-        column-gap: 40px;
-        row-gap: 30px;
     }
     .one, .two {
         margin: .5rem 0;
     }
 }
 
-
 @media only screen and (min-width:810px) {
-    
     .header {
-        padding: 1.8rem;
+        padding: 3rem 4rem;
     }
-
-    .banner-body{
+    .banner .banner-body {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
+        margin: 0 4rem;
     }
-
-    .banner-image{
+    .banner-image {
         width: 50%;
         display: flex;
         justify-content: flex-end;
     }
-
-    .banner-image img{
+    .banner-image img {
         width: 85%;
     }
-
-    .banner-content-container{
+    .banner-content-container {
         width: 45%;
     }
     .banner-content {
-        margin:0;
+        margin: 0;
     }
-    .banner-content h1{
+    .banner-content h1 {
         font-size: 1.8rem;
     }
-
     .banner-content p {
         font-size: 1rem;
     }
-
     .banner-points li span {
         font-size: 1.062rem;
     }
-    .email-form{
+    .email-form {
         margin-top: 1.2rem;
     }
-
     .email-form input {
         padding: .7rem .3rem;
     }
-    
     .email-form input::placeholder {
         font-size: 1rem;
     }
-    
     .email-form button {
         font-size: 16px;
         padding: .7rem .3rem;
     }
-
     .brands {
-        padding: 1.8rem;
+        padding: 2rem 4rem;
     }
     .escrow {
-        padding: 0 1.8rem;
+        padding: 0 4rem;
     }
     .escrow .escrow-body {
         display: flex;
@@ -502,10 +502,9 @@
         align-items: center;
         justify-content: center;
         flex-direction: row-reverse;
-        margin: 3.5rem 1.8rem;
+        margin: 3.5rem 4rem;
     }
-
-    .escrow-content,.escrow-img,.text-editor-content,.editor-img{
+    .escrow-content, .escrow-img, .text-editor-content, .editor-img {
         width: 50%;
     }
     .escrow-body .escrow-content h1, .text-editor-content h1 {
@@ -521,7 +520,11 @@
         letter-spacing: 1px;
     }
     .footer {
-        padding: 1.8rem;
+        width: 100%;
+        padding: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .footer-content .footer-top p {
         margin-top: 1rem;
@@ -546,6 +549,42 @@
         row-gap: 30px;
     }
     .one, .two {
+        margin: .5rem 0;
+    }
+}
+
+@media only screen and (min-width:1180px) {
+ 
+    .banner-image img {
+        height: 500px;
+    }
+    
+    .email-form {
+        margin-top: 1.4rem;
+    }
+    .brands {
+        padding: 4rem;
+    }
+    .brands-img img:nth-child(6), .brands-img img:nth-child(7), .brands-img img:nth-child(8) {
+        display: inline-block;
+    }
+    .brands img, .brands img:nth-child(5) {
+        width: 12.5%;
+        margin-right: .6rem;
+    }
+    .brands img:nth-child(8) {
+        margin-right: 0;
+    }
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas: "footer-top footer-top link-1 link-2 link-3 link-4";
+        column-gap: 30px;
+    }
+    .footer-top {
+        margin-right: 2rem;
+    }
+    .three, .four {
         margin: .5rem 0;
     }
 }
