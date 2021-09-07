@@ -584,6 +584,10 @@
     .footer-top {
         margin-right: 2rem;
     }
+    .footer-link{
+        display: flex;
+        justify-content: center;
+    }
     .three, .four {
         margin: .5rem 0;
     }
