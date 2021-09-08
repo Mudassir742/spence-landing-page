@@ -16,6 +16,10 @@
     background-color: #efeeea;
 }
 
+nav {
+    display: none;
+}
+
 .menu-btn i {
     font-size: 1.8rem;
 }
@@ -351,11 +355,55 @@
     .header {
         padding: 1.8rem 1.5rem;
     }
+    .logo {
+        width: 30%;
+    }
     .logo h2 {
         font-size: 1.8rem;
     }
-    .menu-btn i {
-        font-size: 2rem;
+    nav {
+        width: 60%;
+        display: flex;
+        align-items: center;
+    }
+    .nav-links {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .nav-links .center-links {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    .center-links li {
+        margin-right: .8rem;
+    }
+    .nav-links .right-links {
+        display: flex;
+        align-items: center;
+    }
+    .right-links span {
+        color: black;
+        font-size: 1.2rem;
+    }
+    .right-links button {
+        margin-left: .8rem;
+        font-size: 1.2rem;
+        padding: .6rem .5rem;
+        color: white;
+        background-color: black;
+        border-color: black;
+        border-radius: 6px;
+    }
+    .center-links li a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+    .menu-btn {
+        display: none;
     }
     .banner .banner-body {
         margin: 0 1.5rem;
@@ -440,6 +488,15 @@
 @media only screen and (min-width:810px) {
     .header {
         padding: 3rem 4rem;
+    }
+    nav {
+        width: 65%;
+    }
+    .nav-links {
+        justify-content: space-between;
+    }
+    .center-links li {
+        margin-right: 2rem;
     }
     .banner .banner-body {
         display: flex;
@@ -554,11 +611,13 @@
 }
 
 @media only screen and (min-width:1180px) {
- 
+    .right-links button{
+        cursor: pointer;
+    }
+    
     .banner-image img {
         height: 500px;
     }
-    
     .email-form {
         margin-top: 1.4rem;
     }
@@ -584,11 +643,30 @@
     .footer-top {
         margin-right: 2rem;
     }
-    .footer-link{
+    .footer-link {
         display: flex;
         justify-content: center;
     }
     .three, .four {
         margin: .5rem 0;
     }
+}
+
+@media only screen and (min-width:1300px) {
+    .header {
+        padding: 3rem 6rem;
+    }
+    .banner .banner-body {
+        margin: 0 6rem;
+    }
+    .brands, .footer {
+        padding: 2rem 6rem;
+    }
+    .escrow {
+        padding: 0 6rem;
+    }
+    .text-editor {
+        margin: 3.5rem 6rem;
+    }
+    
 }
